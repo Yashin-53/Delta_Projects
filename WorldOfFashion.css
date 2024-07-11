@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+#check{
+    display: none;
+}
+#check:checked ~ .sidebar{
+    left: 0;
+}
+#check:checked ~ .btn-one{
+    opacity: 0;
+}
+.sidebar{
+    position: fixed;
+    left: -20rem;
+    height: 100%;
+    width: 19rem;
+    background-color: rgba(54, 83, 134, 0.95);
+    box-shadow: 0 0 15px rgb(16, 15, 15);
+    transition: all 0.3s ease-out;
+    z-index: 1;
+}
+.main-box{
+    height: 100vh;
+    background-size: cover;
+}
+.user-logo{
+    position: absolute;
+    width: 99%;
+    height: 70px;
+    border: 2px solid black;
+    background-color: rgb(15, 16, 53);
+    display: flex;
+    align-items: center;
+}
+.user-logo a{
+    position: absolute;
+    left: 50px;
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+#user-icon{
+    color: white;
+    font-size: 1.5rem;
+    margin-left: 10px;
+}
+.btn-one{
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    left: 10px;
+    line-height: 50px;
+    z-index: 1;
+}
+.btn-one i{
+    cursor: pointer;
+    transition: all 0.1s linear;
+}
+
+.btn-two i{
+    font-size: 25px;
+    cursor: pointer;
+    transition: all 0.1s linear;
+}
+.btn-one i:hover{
+    transform: scale(1.2);
+}
+.btn-two i:hover{
+    transform: scale(1.2);
+}
+.btn-two{
+    position: absolute;
+    left: 265px;
+    color: aliceblue;
+}
+.menu{
+    position: absolute;
+    width: 100%;
+    top: 80px;
+}
+.menu li{
+    line-height: 50px;
+    padding: 0px 10px;
+}
+.menu li a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+    margin-left: 10px;
+}
+.menu i{
+    font-size: 1.3rem;
+    color: rgb(15, 16, 53);
+}
+.menu li:hover{
+    box-shadow: 0 0 3px black;
+}
+.stickynav{
+    position:sticky;
+    top: 0;
+    width: 100%;
+    background-color: rgb(15, 16, 53);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.more-opt{
+    display: none;
+}
+.brand-logo{
+    width: 180px;
+    height: 96%;
+    margin-left: 50px;
+    background-color: rgb(255, 239, 115);
+    border: 1px solid black;
+    border-radius: 8px;
+    color: rgb(15, 16, 53);
+    padding: 0 5px;
+}
+.stickynav .brand-logo p{
+    font-size: 1rem;
+    line-height: 18px;
+}
+.search-box{
+    height: 35px;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 50px 0 0 50px;
+    outline: 0 none;
+    border-right: none;
+    padding: 0 10px;
+}
+form{
+    display: flex;
+    width: 30%;
+}
+form button{
+    background-color: white;
+    border: 1px solid black;
+    height: 35px;
+    width: 40px;
+    border: 2px solid black;
+    border-radius: 0 50px 50px 0;
+    cursor: pointer;
+}
+form button i{
+    font-size: 20px;
+}
+form .search-box{
+    font-size: 1rem;
+}
+.nav-options{
+    height: 100%;
+    width: 350px;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    left: 50px;
+}
+.nav-options a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.nav-options a:hover{
+    text-decoration: underline;
+}
+.nav-options i{
+    color: white;
+}
+.card{
+    background-color: rgb(154, 200, 205);
+    height: 300px;
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.1s linear;
+    margin: 20px 0 0 20px;
+}
+.card:hover{
+    box-shadow: 0 0 6px black;
+}
+.card img{
+    width: 100%;
+    height: 70%;
+    border-radius: 10px 10px 0 0;
+}
+.item-info{
+    padding: 0 10px;
+}
+.item-info div:hover{
+    text-decoration: underline;
+}
+.style{
+    font-weight: 600;
+    color: rgb(77, 80, 82);
+}
+.price{
+    font-weight: 700;
+}
+.less{
+    font-size: 13px;
+    margin-left: 5px;
+    padding: 0 4px;
+    background-color: rgb(11, 171, 11);
+    border-radius: 8px 2px;
+    font-weight: 500;
+}
+.card-container{
+    background-color: rgb(220, 242, 241);
+    padding: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+h2{
+    margin: 20px 0 0 10px;
+    background-color: rgb(220, 242, 241);
+}
+.footer{
+    background-color: rgb(30, 3, 66);
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer>div{
+    color: white;
+    height: 60%;
+    width: 300px;
+}
+.follow a{
+    color: white;
+    text-decoration: none;
+}
+.list{
+    opacity: 0.5;
+}
+.follow .list:hover{
+    text-decoration: underline;
+    opacity: 1;
+}
+.footer i{
+    margin-right: 10px;
+}
+@media(max-width:768px){
+    .stickynav .nav-options{
+        display: none;
+    }
+    .more-opt{
+        display: inline;
+        height: 30px;
+        width: 30px;
+        font-size: 20px;
+        color: white;
+        border: 1px solid white;
+        border-radius: 100px;
+        cursor: pointer;
+    }
+    .more-opt i{
+        margin-left: 12px;
+    }
+}
+@media(max-width:576px){
+    .more-opt{
+        display: none;
+    }
+    .search-box{
+        display: none;
+    }
+    .search-box ~ button{
+        position: relative;
+        left:50px;
+        border-radius: 20%;
+    }
+    .card{
+        height: 230px;
+        width: 150px;
+        border-radius: 10px;
+        margin: 20px 0 0 20px;
+    }
+    .footer{
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .style{
+        font-weight: 500;
+        font-size: 15px;
+    }
+    .price{
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .less{
+        font-size: 10px;
+        border-radius: 6px 1px;
+        font-weight: 500;
+    }
+    .details{
+        font-size: 12px;
+        line-height: 15px;
+    }
+}
